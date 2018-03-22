@@ -26,7 +26,7 @@ apis:
   tags: Moderators
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/youtube/livechat-moderators-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/youtube/livechat-moderators-parameters.md
 x-common:
 - type: x-articles
   url: https://developers.google.com/youtube/articles/
