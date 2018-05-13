@@ -27,17 +27,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/youtube/livechat-moderators-post.md
-- name: Youtube Parameters Live Chat Moderators
-  description: Parameters livechat moderators
+- name: Youtube Add Live Chat Moderators
+  description: Adds a new moderator for the chat.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/youtube-logo.png
   humanURL: https://www.youtube.com/
   baseURL: https://www.googleapis.com//youtube/v1
   tags: Moderators
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/youtube/livechat-moderators-parameters.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/youtube/livechat-moderators-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/youtube/livechat-moderators-post.md
 x-common:
 - type: x-articles
   url: https://developers.google.com/youtube/articles/
