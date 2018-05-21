@@ -1,32 +1,43 @@
 ---
 name: Stack Exchange
+x-slug: stack-exchange
 description: Stack Exchange is a network of question and answer websites on diverse
   topics in many different fields, each site covering a specific topic, where questions,
   answers, and users are subject to a reputation award process. The sites are modeled
   after Stack Overflow, a forum for computer programming questions that was the original
   site in this network. The reputation system is designed to allow the sites to be
   self-moderating.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/253_logo.png
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
 x-kinRank: "8"
 x-alexaRank: ""
-tags:
-- Streamrank
-- Stack
-- Question Answer
-- Plug in
-- My API Stack
-- Media
-- Imports
-- Content
-- Code
-- Citations
-- Answers
-created: "2018-05-13"
-modified: "2018-05-13"
+tags: Moderators
+created: "2018-05-20"
+modified: "2018-05-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Stack Exchange Get User Moderators
+  x-api-slug: stack-exchange
+  description: "Gets those users on a site who can exercise moderation powers.\n \nNote,
+    employees of Stack Exchange Inc. will be returned if they have been granted moderation
+    powers on a site even if they have never been appointed or elected explicitly.
+    This method checks abilities, not the manner in which they were obtained.\n \nThe
+    sorts accepted by this method operate on the follow fields of the user object:\n
+    - reputation - reputation\n - creation - creation_date\n - name - display_name\n
+    - modified - last_modified_date\n  reputation is the default sort.\n \n It is
+    possible to create moderately complex queries using sort, min, max, fromdate,
+    and todate.\n \nThis method returns a list of users."
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
+  humanURL: https://stackexchange.com/
+  baseURL: https://api.stackexchange.com//2.2//users/moderators
+  tags: Users,Moderators
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderators-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderators-get-openapi.md
 - name: Stack Exchange Get Users Moderators Elected
+  x-api-slug: stack-exchange
   description: "Returns those users on a site who both have moderator powers, and
     were actually elected.\n \nThis method excludes Stack Exchange Inc. employees,
     unless they were actually elected moderators on a site (which can only have happened
@@ -35,15 +46,30 @@ apis:
     - name - display_name\n - modified - last_modified_date\n  reputation is the default
     sort.\n \n It is possible to create moderately complex queries using sort, min,
     max, fromdate, and todate.\n \nThis method returns a list of users."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/253_logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
+  humanURL: https://stackexchange.com/
+  baseURL: https://api.stackexchange.com//2.2//users/moderators/elected
+  tags: Users,Moderators
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderatorselected-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderatorselected-get-openapi.md
+- name: Stack Exchange
+  x-api-slug: stack-exchange
+  description: Stack Exchange is a network of question and answer websites on diverse
+    topics in many different fields, each site covering a specific topic, where questions,
+    answers, and users are subject to a reputation award process. The sites are modeled
+    after Stack Overflow, a forum for computer programming questions that was the
+    original site in this network. The reputation system is designed to allow the
+    sites to be self-moderating.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
   humanURL: https://stackexchange.com/
   baseURL: https://api.stackexchange.com//2.2
   tags: Moderators
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/users-moderators-elected-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/users-moderators-elected-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/openapi.md
 x-common:
 - type: x-authentication
   url: https://api.stackexchange.com/docs/authentication
