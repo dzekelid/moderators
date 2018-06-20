@@ -1,38 +1,48 @@
 ---
 name: SoundCloud
 x-slug: soundcloud
-description: SoundCloud is a global online audio distribution platform based in Berlin,
-  Germany, that enables its users to upload, record, promote, and share their originally-created
-  sounds. According to the company&rsquo;s data, in December 2014, the service attracts
-  more than 175 million unique monthly listeners, while content creators upload about
-  12 hours worth of audio every minute.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Soundcloud-logo.jpg
+description: SoundCloud is a music and podcast streaming platform that lets you listen
+  to millions of songs from around the world, or upload your own. Start listening
+  now!
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/252-soundcloud.jpg
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "114"
 tags: Moderators
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/soundcloud/apis.md
 specificationVersion: "0.14"
 apis:
-- name: SoundCloud Get Group Moderators
-  x-api-slug: soundcloud
+- name: Sound Cloud Get Groups Moderators
+  x-api-slug: sound-cloud
   description: Returns a collection of moderators of the group with group id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Soundcloud-logo.jpg
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/252-soundcloud.jpg
   humanURL: http://soundcloud.com
   baseURL: https://api.soundcloud.com////groups/{group_id}/moderators.json
-  tags: Audio,Groups,Moderators
+  tags: Groups,Moderators
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/soundcloud/groupsgroup-idmoderators-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/soundcloud/groupsgroup-idmoderatorsjson-get-openapi.md
-- name: SoundCloud
-  x-api-slug: soundcloud
-  description: SoundCloud is a global online audio distribution platform based in
-    Berlin, Germany, that enables its users to upload, record, promote, and share
-    their originally-created sounds. According to the company&rsquo;s data, in December
-    2014, the service attracts more than 175 million unique monthly listeners, while
-    content creators upload about 12 hours worth of audio every minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Soundcloud-logo.jpg
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/soundcloud/groupsgroup-idmoderators-json-get-openapi.md
+- name: Sound Cloud Get Groups Moderators. Format
+  x-api-slug: sound-cloud
+  description: Returns a collection of moderators of the group with group id
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/252-soundcloud.jpg
+  humanURL: http://soundcloud.com
+  baseURL: https://api.soundcloud.com////groups/{group_id}/moderators.{format}
+  tags: Groups,Moderators,,Format
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/soundcloud/groupsgroup-idmoderators-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/soundcloud/groupsgroup-idmoderators-format-get-openapi.md
+- name: Sound Cloud
+  x-api-slug: sound-cloud
+  description: SoundCloud is a music and podcast streaming platform that lets you
+    listen to millions of songs from around the world, or upload your own. Start listening
+    now!
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/252-soundcloud.jpg
   humanURL: http://soundcloud.com
   baseURL: https://api.soundcloud.com//
   tags: Moderators
@@ -49,6 +59,8 @@ x-common:
 - type: x-console
   url: https://developers.soundcloud.com/console
 - type: x-crunchbase
+  url: https://crunchbase.com/organization/soundcloud
+- type: x-crunchbase
   url: http://www.crunchbase.com/company/soundcloud
 - type: x-developer
   url: http://developers.soundcloud.com
@@ -64,6 +76,8 @@ x-common:
   url: https://soundcloud.com/terms-of-use
 - type: x-twitter
   url: https://twitter.com/soundcloudapi
+- type: x-twitter
+  url: https://twitter.com/SoundCloud
 - type: x-website
   url: http://soundcloud.com
 include: []

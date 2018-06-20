@@ -1,18 +1,16 @@
 ---
 name: Stack Exchange
 x-slug: stack-exchange
-description: Stack Exchange is a network of question and answer websites on diverse
-  topics in many different fields, each site covering a specific topic, where questions,
-  answers, and users are subject to a reputation award process. The sites are modeled
-  after Stack Overflow, a forum for computer programming questions that was the original
-  site in this network. The reputation system is designed to allow the sites to be
-  self-moderating.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
+description: After someone asks a question, members of the community propose answers.
+  Others vote on those answers. Very quickly, the answers with the most votes rise
+  to the top. You don???t have to read through a lot of discussion to find the best
+  answer.    Like to...
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
 x-kinRank: "8"
-x-alexaRank: ""
+x-alexaRank: "126"
 tags: Moderators
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/apis.md
 specificationVersion: "0.14"
 apis:
@@ -27,8 +25,8 @@ apis:
     - modified - last_modified_date\n  reputation is the default sort.\n \n It is
     possible to create moderately complex queries using sort, min, max, fromdate,
     and todate.\n \nThis method returns a list of users."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
-  humanURL: https://stackexchange.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
+  humanURL: http://stackexchange.com
   baseURL: https://api.stackexchange.com//2.2//users/moderators
   tags: Users,Moderators
   properties:
@@ -46,8 +44,8 @@ apis:
     - name - display_name\n - modified - last_modified_date\n  reputation is the default
     sort.\n \n It is possible to create moderately complex queries using sort, min,
     max, fromdate, and todate.\n \nThis method returns a list of users."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
-  humanURL: https://stackexchange.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
+  humanURL: http://stackexchange.com
   baseURL: https://api.stackexchange.com//2.2//users/moderators/elected
   tags: Users,Moderators
   properties:
@@ -57,14 +55,12 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderatorselected-get-openapi.md
 - name: Stack Exchange
   x-api-slug: stack-exchange
-  description: Stack Exchange is a network of question and answer websites on diverse
-    topics in many different fields, each site covering a specific topic, where questions,
-    answers, and users are subject to a reputation award process. The sites are modeled
-    after Stack Overflow, a forum for computer programming questions that was the
-    original site in this network. The reputation system is designed to allow the
-    sites to be self-moderating.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/253_logo.png
-  humanURL: https://stackexchange.com/
+  description: After someone asks a question, members of the community propose answers.
+    Others vote on those answers. Very quickly, the answers with the most votes rise
+    to the top. You don???t have to read through a lot of discussion to find the best
+    answer.    Like to...
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
+  humanURL: http://stackexchange.com
   baseURL: https://api.stackexchange.com//2.2
   tags: Moderators
   properties:
@@ -81,8 +77,14 @@ x-common:
   url: http://blog.stackoverflow.com/feed/
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/stack-exchange
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/stack-exchange
 - type: x-developer
   url: http://api.stackexchange.com/
+- type: x-email
+  url: legal@stackexchange.com
+- type: x-email
+  url: team@stackexchange.com
 - type: x-email
   url: team+api@stackexchange.com
 - type: x-error-codes
@@ -103,6 +105,8 @@ x-common:
   url: http://stackexchange.com/legal/api-terms-of-use
 - type: x-twitter
   url: https://twitter.com/StackExchange
+- type: x-website
+  url: http://stackexchange.com
 - type: x-website
   url: https://stackexchange.com/
 include: []

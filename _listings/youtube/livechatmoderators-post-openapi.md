@@ -63,17 +63,6 @@ paths:
       tags:
       - Chat
       - Moderators
-    parameters:
-      summary: Parameters Live Chat Moderators
-      description: Parameters livechat moderators
-      operationId: parametersLivechatModerators
-      x-api-path-slug: livechatmoderators-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chat
-      - Moderators
     post:
       summary: Add Live Chat Moderators
       description: Adds a new moderator for the chat.
