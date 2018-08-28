@@ -9,13 +9,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-
 x-kinRank: "8"
 x-alexaRank: "126"
 tags: Moderators
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Stack Exchange Get User Moderators
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get User Moderators
+  x-api-slug: usersmoderators-get
   description: "Gets those users on a site who can exercise moderation powers.\n \nNote,
     employees of Stack Exchange Inc. will be returned if they have been granted moderation
     powers on a site even if they have never been appointed or elected explicitly.
@@ -27,15 +27,17 @@ apis:
     and todate.\n \nThis method returns a list of users."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//users/moderators
-  tags: Users,Moderators
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderators-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderators-get-openapi.md
-- name: Stack Exchange Get Users Moderators Elected
-  x-api-slug: stack-exchange
+- name: Stack Exchange - Get Users Moderators Elected
+  x-api-slug: usersmoderatorselected-get
   description: "Returns those users on a site who both have moderator powers, and
     were actually elected.\n \nThis method excludes Stack Exchange Inc. employees,
     unless they were actually elected moderators on a site (which can only have happened
@@ -46,27 +48,20 @@ apis:
     max, fromdate, and todate.\n \nThis method returns a list of users."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
   humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2//users/moderators/elected
-  tags: Users,Moderators
+  baseURL: https://api.stackexchange.com//2.2
+  tags: Citations, Answers, Code, Content, My API Stack, Imports, Stack, Media, Forums,
+    Streams, Plugins, Questions, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderatorselected-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/usersmoderatorselected-get-openapi.md
-- name: Stack Exchange
-  x-api-slug: stack-exchange
-  description: After someone asks a question, members of the community propose answers.
-    Others vote on those answers. Very quickly, the answers with the most votes rise
-    to the top. You dont have to read through a lot of discussion to find the best
-    answer.    Like to...
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/253-stack-exchange.jpg
-  humanURL: http://stackexchange.com
-  baseURL: https://api.stackexchange.com//2.2
-  tags: Moderators
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/moderators/master/_listings/stack-exchange/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://square.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://stack.exchange.stack.network
 - type: x-authentication
   url: https://api.stackexchange.com/docs/authentication
 - type: x-base
